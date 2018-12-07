@@ -1,0 +1,29 @@
+<div class="service-container">
+  <h4>Проверка валидности марок в системе ФСРАР</h4>
+    <form [formGroup]="markForm">
+      <div style="display: inline-block; width: 100%;">
+        <div style="display: inline-block; width: 88%;">
+          <mat-list role="list">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Марка" formControlName="markValue" [(ngModel)]="bar">
+              <mat-error *ngIf="markValue.invalid && markValue.touched" class="has-text-danger">
+                Марка невалидна...
+              </mat-error>
+            </mat-form-field>
+          </mat-list>
+        </div>
+
+        <div style="display: inline-block; width: 10%;">
+          <button mat-raised-button color="primary" (click)="checkMark()" [disabled]="markForm.invalid" style="margin-left: 10px; opacity: 0.7">Проверить
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div>
+      <app-mark-item
+        *ngFor="let b of bars"
+        [mark]="b"
+      ></app-mark-item>
+    </div>
+</div>

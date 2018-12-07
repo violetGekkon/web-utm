@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+// ----------------  THE FONTS
+
+h4 {
+  opacity: 0.7;
+}
+
+h1, h2, h3, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  opacity: 0.7;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: .8rem;
+}
+
+// ----------------  LAYOUT
+
+.container {
+  margin: 0 auto;
+  max-width: 50%;
+  padding-top:40px;
+  font-size: 16px;
+}
+
+// ----------------  THE FONTS
+
+$border-color: rgba(black, .3);
+
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(black, .7);
+  border-left: 2px solid $border-color;
+
+  p {
+    font-size: 1rem;
+  }
+
+  &::before {
+    content: attr(date-is);
+    position: absolute;
+    left: 2em;
+    font-weight: bold;
+    top: 1em;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: .785rem;
+  }
+
+  &::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -7px;
+    border-radius: 10px;
+    content: '';
+    border: 2px solid $border-color;
+    background: white;
+  }
+
+  &:last-child {
+    border-image: linear-gradient(
+        to bottom,
+        $border-color 60%,
+        rgba($border-color, 0)) 1 100%
+  ;
+  }
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.mark-container {
+  display: inline-block;
+  width: 88%;
+}
+
+.button-container {
+  display: inline-block;
+  width: 10%;
+}
+
+.ci-timeline-entry-dot{
+  background-color: #3f51b5;
+  size: 10px !important;
+  width: 20px;
+  height: 20px;
+}
+
+mgl-timeline{
+  display: none;
+}
+
+.mgl-timeline-visible{
+  display: block;
+}
+
+mgl-timeline-entry{
+  width: calc(20% - 5px) !important;
+}
+
+mgl-timeline-entry-side {
+  width: 500px;
+  top: 10px;
+}
+

@@ -1,0 +1,47 @@
+<div class="ci-container">
+  <mat-grid-list cols="2" rowHeight="2:1">
+
+    <mat-grid-tile>
+      <img class="ci-img" src="assets/img/scaner.png">
+      <div mat-button class="button-content">
+        <button mat-button class="ci-btn" routerLink="/mark">
+          <h2>Проверка марок</h2>
+        </button>
+        <p>Проверка наличия специальной федеральной или акцизной марки на балансе организации</p>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <img class="ci-img" src="assets/img/frap.png">
+      <div class="button-content">
+        <button mat-button class="ci-btn" routerLink="/mark/history">
+          <h2>История движения марки</h2>
+        </button>
+        <p>Запрос информации о движении федерельной <br> специальной или акцизной марки</p>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <img class="ci-img" src="assets/img/declaration.png">
+      <div class="button-content">
+        <button mat-button class="ci-btn" routerLink="/mark/declaration">
+          <h2>Декларирование</h2>
+        </button>
+        <p>Декларирование объема производства,<br> оборота и использования этилового спирта</p>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <img class="ci-img" src="assets/img/alcoholic-beverage-licensing.png">
+      <div class="button-content">
+        <button mat-button class="ci-btn" routerLink="/mark/license">
+          <h2>Лицензирование</h2>
+        </button>
+        <p>Лицензирование хранения этилового <br> спирта, АП и спиртосодержащей продукции</p>
+      </div>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+  <router-outlet></router-outlet>
+</div>
+

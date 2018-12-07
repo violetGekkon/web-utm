@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="spacer-two"></span>
+    <button mat-button class="ci-nav-btn-logo" routerLink="/utm/home"><img src="assets/img/eagle.png" alt="Двуглавый орел" width="50" height="50">&nbsp;&nbsp;Универсальный транспортный модуль</button>
+    <span class="spacer"></span>
+    <button mat-button class="ci-nav-btn" routerLink="/utm/home">Описание</button>
+    <button mat-button class="ci-nav-btn" routerLink="/document">Документы</button>
+    <button mat-button class="ci-nav-btn" routerLink="/service">Сервисы</button>
+    <!--<button mat-button class="nav-btn"><img src="assets/img/avatar.png" class="avatar"></button>-->
+
+    <button mat-button [matMenuTriggerFor]="menu"><img src="assets/img/avatar.png" class="avatar"></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        <span>Настройки</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>arrow_forward</mat-icon>
+        <span>Вход</span>
+      </button>
+    </mat-menu>
+    <span class="spacer-two"></span>
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//@import "~font-awesome/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 16px;
+  //background-color: #B3E5FC;
+}
+
+.mat-input-wrapper {
+  width: 400px !important;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.spacer-two {
+  flex-grow: 2;
+}
+
+.nav-btn {
+  font-size: 16px;
+}
+
+.material-icons.orange600 {
+  color: #FB8C00;
+}
+
+.material-icons.lite-blue {
+  color: #1488c6;
+  opacity: .7;
+}
+
+.material-icons.lite-green {
+  color: #008000;
+  opacity: .7;
+}
+
+.material-icons.lite-red {
+  color: #ff0000;
+  opacity: .7;
+}
+
+.formFieldWidth480 .mat-form-field-infix {
+  width: 480px;
+}
+
+.ci-container {
+  margin: 50px auto 0 auto;
+  max-width: 50%;
+}
+
+.mgl-timeline-line {
+  left: 20%!important;
+  width: 5px!important;
+}
+
+mgl-timeline mgl-timeline-entry .mgl-timeline-entry-card {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+  background-color: #fff !important;
+  color: #000;
+}
+
+mgl-timeline mgl-timeline-entry .mgl-timeline-entry-card .mgl-timeline-entry-card-header {
+  background-color: #f5f5f5 !important;
+}
+
+.service-container{
+  margin: 10px auto; max-width: 50%; padding-top:40px; font-size: 16px
+}
